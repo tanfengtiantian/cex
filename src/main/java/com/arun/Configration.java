@@ -18,7 +18,7 @@ public class Configration {
 	public ExchangeApi exchangeApi() { 
 		ExchangeCore exchangeCore = ExchangeCore.builder()
 		        .resultsConsumer(new SimpleEventsProcessor(new IEventsHanlerImpl()))
-		        .serializationProcessorFactory(() -> DummySerializationProcessor.INSTANCE)
+		        //.serializationProcessorFactory(() -> DummySerializationProcessor.INSTANCE)
 		        .exchangeConfiguration(ExchangeConfiguration.defaultBuilder().build())
 		        .build();
 
